@@ -360,3 +360,22 @@ footer p{
         grid-template-columns:1fr;
     }
 }
+
+/* ================= DOWNLOAD CV BUTTON ================= */
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    margin-right:10px;
+    padding:12px 25px;
+    background:var(--primary);
+    color:var(--white);
+    text-decoration:none;
+    border-radius:30px;
+    transition:.3s;
+    cursor:pointer;
+}
+
+.btn:hover{
+    box-shadow:0 0 20px var(--primary);
+}
