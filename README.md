@@ -167,4 +167,4 @@ This project is open for learning and educational purposes.
 © 2026 Kasolo Denis (Trvpboi). All Rights Reserved.
 ````
 
-This README is suitable for uploading the project to GitHub and gives visitors a clear overview of your portfolio website.
+
