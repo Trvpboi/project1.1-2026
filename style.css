@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+/* ================= GLOBAL ================= */
+
 *{
     margin:0;
     padding:0;
@@ -86,13 +88,13 @@ nav ul li a:hover{
 
 #home button{
     margin-top:20px;
+    margin-right:10px;
     padding:12px 25px;
     border:none;
     border-radius:30px;
     background:var(--primary);
     color:white;
     cursor:pointer;
-    margin-right:10px;
     transition:.3s;
 }
 
@@ -107,11 +109,11 @@ nav ul li a:hover{
     object-fit:cover;
     border:6px solid var(--primary);
     box-shadow:
-    0 0 20px var(--primary),
-    0 0 40px var(--primary);
+        0 0 20px var(--primary),
+        0 0 40px var(--primary);
 }
 
-/* social links */
+/* ================= HOME SOCIAL LINKS ================= */
 
 #home div div{
     margin-top:20px;
@@ -321,6 +323,25 @@ footer p{
     color:#ccc;
 }
 
+/* ================= DOWNLOAD CV BUTTON ================= */
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    margin-right:10px;
+    padding:12px 25px;
+    background:var(--primary);
+    color:var(--white);
+    text-decoration:none;
+    border-radius:30px;
+    transition:.3s;
+    cursor:pointer;
+}
+
+.btn:hover{
+    box-shadow:0 0 20px var(--primary);
+}
+
 /* ================= RESPONSIVE ================= */
 
 @media(max-width:900px){
@@ -359,23 +380,4 @@ footer p{
     #projects div{
         grid-template-columns:1fr;
     }
-}
-
-/* ================= DOWNLOAD CV BUTTON ================= */
-
-.btn{
-    display:inline-block;
-    margin-top:20px;
-    margin-right:10px;
-    padding:12px 25px;
-    background:var(--primary);
-    color:var(--white);
-    text-decoration:none;
-    border-radius:30px;
-    transition:.3s;
-    cursor:pointer;
-}
-
-.btn:hover{
-    box-shadow:0 0 20px var(--primary);
 }
