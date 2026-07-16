@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+:root{
+    --primary:#ff6600;
+    --dark:#050505;
+    --dark2:#0d0d0d;
+    --white:#ffffff;
+}
+
+body{
+    background:var(--dark);
+    color:var(--white);
+}
+
+/* ================= HEADER ================= */
+
+header{
+    width:100%;
+    background:#000;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+    padding:15px 8%;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav h2{
+    color:#fff;
+    font-size:28px;
+}
+
+nav ul{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:var(--primary);
+}
+
+/* ================= HOME ================= */
+
+#home{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:120px 8% 80px;
+    gap:50px;
+}
+
+#home > div:first-child{
+    flex:1;
+}
+
+#home h1{
+    font-size:55px;
+    margin:10px 0;
+    color:var(--primary);
+}
+
+#home p{
+    line-height:1.8;
+}
+
+#home button{
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    background:var(--primary);
+    color:white;
+    cursor:pointer;
+    margin-right:10px;
+    transition:.3s;
+}
+
+#home button:hover{
+    box-shadow:0 0 20px var(--primary);
+}
+
+#home img{
+    width:320px;
+    height:320px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid var(--primary);
+    box-shadow:
+    0 0 20px var(--primary),
+    0 0 40px var(--primary);
+}
+
+/* social links */
+
+#home div div{
+    margin-top:20px;
+}
+
+#home div div a{
+    text-decoration:none;
+    color:var(--primary);
+    margin-right:15px;
+}
+
+/* ================= SECTIONS ================= */
+
+section{
+    padding:80px 8%;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:40px;
+    color:var(--primary);
+}
+
+/* ================= ABOUT ================= */
+
+#about{
+    text-align:center;
+    background:var(--dark2);
+}
+
+#about img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid var(--primary);
+    box-shadow:0 0 25px var(--primary);
+}
+
+#about h3{
+    margin:20px 0;
+}
+
+#about p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+}
+
+#about button{
+    margin-top:20px;
+    padding:12px 30px;
+    border:none;
+    border-radius:30px;
+    background:var(--primary);
+    color:white;
+    cursor:pointer;
+}
+
+/* ================= SKILLS ================= */
+
+#skills{
+    background:#000;
+}
+
+#skills div{
+    margin-bottom:20px;
+}
+
+#skills p{
+    margin-bottom:8px;
+}
+
+progress{
+    width:100%;
+    height:12px;
+}
+
+progress::-webkit-progress-bar{
+    background:#fff;
+    border-radius:20px;
+}
+
+progress::-webkit-progress-value{
+    background:var(--primary);
+    border-radius:20px;
+}
+
+/* ================= SERVICES ================= */
+
+#services{
+    background:var(--dark2);
+}
+
+#services > div{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+#services article{
+    background:var(--primary);
+    padding:30px;
+    text-align:center;
+    border-radius:15px;
+    transition:.3s;
+}
+
+#services article:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 20px var(--primary);
+}
+
+#services article button{
+    margin-top:15px;
+    padding:10px 20px;
+    border:none;
+    border-radius:25px;
+    cursor:pointer;
+}
+
+/* ================= PROJECTS ================= */
+
+#projects{
+    background:#000;
+}
+
+#projects div{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+#projects img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:10px;
+    border:2px solid var(--primary);
+    transition:.4s;
+}
+
+#projects img:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px var(--primary);
+}
+
+/* ================= CONTACT ================= */
+
+#contact{
+    background:var(--dark2);
+}
+
+form{
+    max-width:700px;
+    margin:auto;
+}
+
+form input,
+form textarea{
+    width:100%;
+    padding:14px;
+    margin-bottom:15px;
+    background:transparent;
+    border:2px solid var(--primary);
+    border-radius:30px;
+    color:white;
+    outline:none;
+}
+
+form textarea{
+    height:180px;
+    resize:none;
+    border-radius:15px;
+}
+
+form button{
+    display:block;
+    margin:auto;
+    padding:12px 35px;
+    background:var(--primary);
+    color:white;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#000;
+}
+
+footer div{
+    margin-bottom:15px;
+}
+
+footer div a{
+    color:var(--primary);
+    text-decoration:none;
+    margin:0 10px;
+}
+
+footer p{
+    color:#ccc;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+
+    #home{
+        flex-direction:column-reverse;
+        text-align:center;
+    }
+
+    #projects div{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:600px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    #home h1{
+        font-size:40px;
+    }
+
+    #home img{
+        width:250px;
+        height:250px;
+    }
+
+    #projects div{
+        grid-template-columns:1fr;
+    }
+}
+
+/* ================= DOWNLOAD CV BUTTON ================= */
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    margin-right:10px;
+    padding:12px 25px;
+    background:var(--primary);
+    color:var(--white);
+    text-decoration:none;
+    border-radius:30px;
+    transition:.3s;
+    cursor:pointer;
+}
+
+.btn:hover{
+    box-shadow:0 0 20px var(--primary);
+}
